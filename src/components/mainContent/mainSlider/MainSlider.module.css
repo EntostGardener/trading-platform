@@ -1,0 +1,26 @@
+.slider {
+  width: 100%;
+  border: 1px solid black;
+  position: relative;
+}
+
+.radios {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  left: 50%;
+  top: 90%;
+}
+
+.sliderRadio {
+  width: 15px;
+  height: 15px;
+  background-color: rgb(76, 67, 59);
+  border-radius: 7.5px;
+}
+
+.bunner {
+  width: 100%;
+  overflow: hidden;
+}

@@ -1,9 +1,7 @@
-import styles from "./page.module.css";
+import {redirect} from "next/navigation";
+import {useLocale} from "next-intl";
 
-export default function Home() {
-  return (
-    <div className={styles.page}>
-      
-    </div>
-  );
+export default function RootPage() {
+  const localActive = useLocale();
+  redirect(`/${localActive}`);
 }
