@@ -1,0 +1,33 @@
+
+.logoContainer {
+    overflow: hidden; /* Hide overflowing logos */
+    white-space: nowrap; /* Prevent logos from wrapping */
+    width: 100%; /* Full width for the container */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .animateMarquee {
+    display: flex; /* Layout the logos in a row */
+    animation: marquee 20s linear infinite; /* Adjust duration for speed */
+    /* Animation to smoothly scroll logos */
+  }
+  
+  /* Individual logo styling */
+  .logo {
+    margin-right: 20px; /* Space between logos */
+  }
+  
+  /* Keyframes for the animation */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0); /* Start from the left */
+    }
+    100% {
+      transform: translateX(-100%); /* Move left by the total width of all logos */
+    }
+  }
+  
+  /* Pause animation on hover */
+  .logoContainer:hover .animateMarquee {
+    animation-play-state: paused; /* Stop the animation when hovered */
+  }
